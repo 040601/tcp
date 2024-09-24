@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ila_4_synth_1" LaunchDir="E:/vivadoprojects/adcether/adc_8channel_zyw_1/adc_8channel_zyw_1.runs/ila_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

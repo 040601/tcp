@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2017.4 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="35" Path="E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="bb3a62f2f10040da9b3506d62161916c"/>
+    <Option Name="Part" Val="xcku040-ffva1156-2-i"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSAVendor" Val="xilinx"/>
+    <Option Name="DSANumComputeUnits" Val="60"/>
+    <Option Name="WTXSimLaunchSim" Val="1"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="50"/>
+    <Option Name="WTModelSimExportSim" Val="50"/>
+    <Option Name="WTQuestaExportSim" Val="50"/>
+    <Option Name="WTIesExportSim" Val="50"/>
+    <Option Name="WTVcsExportSim" Val="50"/>
+    <Option Name="WTRivieraExportSim" Val="50"/>
+    <Option Name="WTActivehdlExportSim" Val="50"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="1024"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+    <Option Name="SimTypes" Val="rtl"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.edf">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.edf"/>
+          <Attr Name="ImportTime" Val="1726728792"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.V">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.V"/>
+          <Attr Name="ImportTime" Val="1726728792"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/TIMER.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/TIMER.v"/>
+          <Attr Name="ImportTime" Val="1726728792"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/WRAP_SiTCP_GMII_XCKU_32K.V">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/WRAP_SiTCP_GMII_XCKU_32K.V"/>
+          <Attr Name="ImportTime" Val="1726728792"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/adc_board.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/adc_board.v"/>
+          <Attr Name="ImportTime" Val="1721118158"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/adc_spi.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/adc_spi.v"/>
+          <Attr Name="ImportTime" Val="1720167490"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/arp_cache.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/arp_cache.v"/>
+          <Attr Name="ImportTime" Val="1723721567"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/arp_rx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/arp_rx.v"/>
+          <Attr Name="ImportTime" Val="1723721584"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/arp_tx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/arp_tx.v"/>
+          <Attr Name="ImportTime" Val="1723721541"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/crc.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/crc.v"/>
+          <Attr Name="ImportTime" Val="1720160156"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/data_package.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/data_package.v"/>
+          <Attr Name="ImportTime" Val="1723970002"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/data_processing.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/data_processing.v"/>
+          <Attr Name="ImportTime" Val="1724764936"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/data_sample_inv.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/ethernet.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/new/ethernet.v"/>
+          <Attr Name="ImportTime" Val="1723901624"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/ethernet_test.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/new/ethernet_test.v"/>
+          <Attr Name="ImportTime" Val="1723893082"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/gmii_arbi.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/new/gmii_arbi.v"/>
+          <Attr Name="ImportTime" Val="1723710418"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/gmii_rx_buffer.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/gmii_rx_buffer.v"/>
+          <Attr Name="ImportTime" Val="1720154846"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/gmii_tx_buffer.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/gmii_tx_buffer.v"/>
+          <Attr Name="ImportTime" Val="1720154802"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/icmp_reply.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/icmp_reply.v"/>
+          <Attr Name="ImportTime" Val="1720159242"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/ip_rx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/ip_rx.v"/>
+          <Attr Name="ImportTime" Val="1720163430"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/ip_tx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/ip_tx.v"/>
+          <Attr Name="ImportTime" Val="1720160366"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/ip_tx_mode.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/ip_tx_mode.v"/>
+          <Attr Name="ImportTime" Val="1720160388"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/lut_config.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/lut_config.v"/>
+          <Attr Name="ImportTime" Val="1720142244"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_rx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_rx.v"/>
+          <Attr Name="ImportTime" Val="1720163378"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_rx_top.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_rx_top.v"/>
+          <Attr Name="ImportTime" Val="1720591262"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_test.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_test.v"/>
+          <Attr Name="ImportTime" Val="1724220466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_top.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_top.v"/>
+          <Attr Name="ImportTime" Val="1720159124"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_tx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_tx.v"/>
+          <Attr Name="ImportTime" Val="1723721636"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_tx_mode.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_tx_mode.v"/>
+          <Attr Name="ImportTime" Val="1723721607"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_tx_top.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_tx_top.v"/>
+          <Attr Name="ImportTime" Val="1720159156"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/sd_card/sd_card_cmd.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/src/sd_card/sd_card_cmd.v"/>
+          <Attr Name="ImportTime" Val="1614160558"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/sd_card/sd_card_sec_read_write.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/src/sd_card/sd_card_sec_read_write.v"/>
+          <Attr Name="ImportTime" Val="1721911676"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/sd_card_test.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/src/sd_card_test.v"/>
+          <Attr Name="ImportTime" Val="1723969344"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/sd_card/sd_card_top.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/src/sd_card/sd_card_top.v"/>
+          <Attr Name="ImportTime" Val="1502714608"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/sitcp_test.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/smi_config.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/smi_config.v"/>
+          <Attr Name="ImportTime" Val="1720154414"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/smi_read_write.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/smi_read_write.v"/>
+          <Attr Name="ImportTime" Val="1720158920"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/spi_config.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/spi_config.v"/>
+          <Attr Name="ImportTime" Val="1720142300"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/spi_master.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/spi_master.v"/>
+          <Attr Name="ImportTime" Val="1720142752"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/udp_rx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/udp_rx.v"/>
+          <Attr Name="ImportTime" Val="1720163454"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/udp_tx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/udp_tx.v"/>
+          <Attr Name="ImportTime" Val="1723883337"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/util_gmii_to_rgmii.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/util_gmii_to_rgmii.v"/>
+          <Attr Name="ImportTime" Val="1720154690"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/top_1.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/new/top_1.v"/>
+          <Attr Name="ImportTime" Val="1724764737"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/data_sample.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/data_sample.v"/>
+          <Attr Name="ImportTime" Val="1723599832"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/fifo_fakeinput/fifo_fakeinput.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="top"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/new/adc_ethernet.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc"/>
+          <Attr Name="ImportTime" Val="1723722862"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/EDF_SiTCP_constraints.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/EDF_SiTCP_constraints.xdc"/>
+          <Attr Name="ImportTime" Val="1726728792"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/imports/new/top_test.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sim_1/new/top_test.v"/>
+          <Attr Name="ImportTime" Val="1721222996"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="top_test"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="eth_data_fifo" Type="BlockSrcs" RelSrcDir="$PSRCDIR/eth_data_fifo">
+      <File Path="$PSRCDIR/sources_1/ip/eth_data_fifo/eth_data_fifo.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/eth_data_fifo/eth_data_fifo.xci"/>
+          <Attr Name="ImportTime" Val="1723722144"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="eth_data_fifo"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ila_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_4">
+      <File Path="$PSRCDIR/sources_1/ip/ila_4/ila_4.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_4/ila_4.xci"/>
+          <Attr Name="ImportTime" Val="1721911602"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ila_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ila_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_2">
+      <File Path="$PSRCDIR/sources_1/ip/ila_2/ila_2.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_2.xci"/>
+          <Attr Name="ImportTime" Val="1723969444"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ila_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="len_fifo" Type="BlockSrcs" RelSrcDir="$PSRCDIR/len_fifo">
+      <File Path="$PSRCDIR/sources_1/ip/len_fifo/len_fifo.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/len_fifo/len_fifo.xci"/>
+          <Attr Name="ImportTime" Val="1723722292"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="len_fifo"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ila_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_3">
+      <File Path="$PSRCDIR/sources_1/ip/ila_3/ila_3.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_3/ila_3.xci"/>
+          <Attr Name="ImportTime" Val="1721964100"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ila_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="icmp_rx_ram_8_256" Type="BlockSrcs" RelSrcDir="$PSRCDIR/icmp_rx_ram_8_256">
+      <File Path="$PSRCDIR/sources_1/ip/icmp_rx_ram_8_256/icmp_rx_ram_8_256.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/icmp_rx_ram_8_256/icmp_rx_ram_8_256.xci"/>
+          <Attr Name="ImportTime" Val="1723722734"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="icmp_rx_ram_8_256"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo5">
+      <File Path="$PSRCDIR/sources_1/ip/fifo5/fifo5.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5.xci"/>
+          <Attr Name="ImportTime" Val="1724764663"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ila_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_6">
+      <File Path="$PSRCDIR/sources_1/ip/ila_6/ila_6.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_6/ila_6.xci"/>
+          <Attr Name="ImportTime" Val="1723883250"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ila_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="udp_tx_data_fifo" Type="BlockSrcs" RelSrcDir="$PSRCDIR/udp_tx_data_fifo">
+      <File Path="$PSRCDIR/sources_1/ip/udp_tx_data_fifo/udp_tx_data_fifo.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_tx_data_fifo/udp_tx_data_fifo.xci"/>
+          <Attr Name="ImportTime" Val="1723875136"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="udp_tx_data_fifo"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="udp_rx_ram_8_2048" Type="BlockSrcs" RelSrcDir="$PSRCDIR/udp_rx_ram_8_2048">
+      <File Path="$PSRCDIR/sources_1/ip/udp_rx_ram_8_2048/udp_rx_ram_8_2048.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_rx_ram_8_2048/udp_rx_ram_8_2048.xci"/>
+          <Attr Name="ImportTime" Val="1723722656"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="udp_rx_ram_8_2048"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sys_clk_mmcm" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sys_clk_mmcm">
+      <File Path="$PSRCDIR/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci"/>
+          <Attr Name="ImportTime" Val="1720078724"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="sys_clk_mmcm"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="udp_checksum_fifo" Type="BlockSrcs" RelSrcDir="$PSRCDIR/udp_checksum_fifo">
+      <File Path="$PSRCDIR/sources_1/ip/udp_checksum_fifo/udp_checksum_fifo.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_checksum_fifo/udp_checksum_fifo.xci"/>
+          <Attr Name="ImportTime" Val="1723722454"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="udp_checksum_fifo"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ila_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_0">
+      <File Path="$PSRCDIR/sources_1/ip/ila_0/ila_0.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_0.xci"/>
+          <Attr Name="ImportTime" Val="1721277730"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ila_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ila_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_5">
+      <File Path="$PSRCDIR/sources_1/ip/ila_5/ila_5.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_5/ila_5.xci"/>
+          <Attr Name="ImportTime" Val="1723895948"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ila_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo4">
+      <File Path="$PSRCDIR/sources_1/ip/fifo4.xcix">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo4.xcix"/>
+          <Attr Name="ImportTime" Val="1723968902"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/fifo4/fifo4.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo4/fifo4.xci"/>
+          <Attr Name="ImportTime" Val="1723968822"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo_ttt" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_ttt">
+      <File Path="$PSRCDIR/sources_1/ip/fifo_ttt.xcix">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo_ttt.xcix"/>
+          <Attr Name="ImportTime" Val="1721198500"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/fifo_ttt/fifo_ttt.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo_ttt/fifo_ttt.xci"/>
+          <Attr Name="ImportTime" Val="1721198424"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo_ttt"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo2">
+      <File Path="$PSRCDIR/sources_1/ip/fifo2.xcix">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2.xcix"/>
+          <Attr Name="ImportTime" Val="1722582182"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/fifo2/fifo2.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xci"/>
+          <Attr Name="ImportTime" Val="1722582098"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo3">
+      <File Path="$PSRCDIR/sources_1/ip/fifo3.xcix">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3.xcix"/>
+          <Attr Name="ImportTime" Val="1723969434"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/fifo3/fifo3.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xci"/>
+          <Attr Name="ImportTime" Val="1723969358"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo_ether" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_ether">
+      <File Path="$PSRCDIR/sources_1/ip/fifo_ether/fifo_ether.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo_ether"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ila_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_1">
+      <File Path="$PSRCDIR/sources_1/ip/ila_1/ila_1.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci"/>
+          <Attr Name="ImportTime" Val="1723969854"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ila_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="gig_ethernet_pcs_pma_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/gig_ethernet_pcs_pma_0">
+      <File Path="$PSRCDIR/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="gig_ethernet_pcs_pma_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo_tcp" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_tcp">
+      <File Path="$PSRCDIR/sources_1/ip/fifo_tcp/fifo_tcp.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo_tcp"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xcku040-ffva1156-2-i" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="eth_data_fifo_synth_1" Type="Ft3:Synth" SrcSet="eth_data_fifo" Part="xcku040-ffva1156-2-i" ConstrsSet="eth_data_fifo" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/eth_data_fifo_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_4_synth_1" Type="Ft3:Synth" SrcSet="ila_4" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_4" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ila_4_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_2_synth_1" Type="Ft3:Synth" SrcSet="ila_2" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_2" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ila_2_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="len_fifo_synth_1" Type="Ft3:Synth" SrcSet="len_fifo" Part="xcku040-ffva1156-2-i" ConstrsSet="len_fifo" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/len_fifo_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_3_synth_1" Type="Ft3:Synth" SrcSet="ila_3" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_3" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ila_3_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="icmp_rx_ram_8_256_synth_1" Type="Ft3:Synth" SrcSet="icmp_rx_ram_8_256" Part="xcku040-ffva1156-2-i" ConstrsSet="icmp_rx_ram_8_256" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/icmp_rx_ram_8_256_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo5_synth_1" Type="Ft3:Synth" SrcSet="fifo5" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo5" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/fifo5_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_6_synth_1" Type="Ft3:Synth" SrcSet="ila_6" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_6" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ila_6_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="udp_tx_data_fifo_synth_1" Type="Ft3:Synth" SrcSet="udp_tx_data_fifo" Part="xcku040-ffva1156-2-i" ConstrsSet="udp_tx_data_fifo" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/udp_tx_data_fifo_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="udp_rx_ram_8_2048_synth_1" Type="Ft3:Synth" SrcSet="udp_rx_ram_8_2048" Part="xcku040-ffva1156-2-i" ConstrsSet="udp_rx_ram_8_2048" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/udp_rx_ram_8_2048_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="sys_clk_mmcm_synth_1" Type="Ft3:Synth" SrcSet="sys_clk_mmcm" Part="xcku040-ffva1156-2-i" ConstrsSet="sys_clk_mmcm" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/sys_clk_mmcm_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="udp_checksum_fifo_synth_1" Type="Ft3:Synth" SrcSet="udp_checksum_fifo" Part="xcku040-ffva1156-2-i" ConstrsSet="udp_checksum_fifo" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/udp_checksum_fifo_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_0_synth_1" Type="Ft3:Synth" SrcSet="ila_0" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ila_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_5_synth_1" Type="Ft3:Synth" SrcSet="ila_5" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_5" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ila_5_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo4_synth_1" Type="Ft3:Synth" SrcSet="fifo4" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo4" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/fifo4_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo_ttt_synth_1" Type="Ft3:Synth" SrcSet="fifo_ttt" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo_ttt" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/fifo_ttt_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo2_synth_1" Type="Ft3:Synth" SrcSet="fifo2" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo2" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/fifo2_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo3_synth_1" Type="Ft3:Synth" SrcSet="fifo3" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo3" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/fifo3_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo_ether_synth_1" Type="Ft3:Synth" SrcSet="fifo_ether" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo_ether" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/fifo_ether_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_1_synth_1" Type="Ft3:Synth" SrcSet="ila_1" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ila_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="gig_ethernet_pcs_pma_0_synth_1" Type="Ft3:Synth" SrcSet="gig_ethernet_pcs_pma_0" Part="xcku040-ffva1156-2-i" ConstrsSet="gig_ethernet_pcs_pma_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/gig_ethernet_pcs_pma_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo_tcp_synth_1" Type="Ft3:Synth" SrcSet="fifo_tcp" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo_tcp" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/fifo_tcp_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream">
+          <Option Id="BinFile">1</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="eth_data_fifo_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="eth_data_fifo" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="eth_data_fifo_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_4_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_4" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ila_4_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_2_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_2" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ila_2_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="len_fifo_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="len_fifo" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="len_fifo_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_3_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_3" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ila_3_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="icmp_rx_ram_8_256_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="icmp_rx_ram_8_256" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="icmp_rx_ram_8_256_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo5_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo5" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo5_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_6_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_6" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ila_6_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="udp_tx_data_fifo_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="udp_tx_data_fifo" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="udp_tx_data_fifo_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="udp_rx_ram_8_2048_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="udp_rx_ram_8_2048" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="udp_rx_ram_8_2048_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="sys_clk_mmcm_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="sys_clk_mmcm" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="sys_clk_mmcm_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="udp_checksum_fifo_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="udp_checksum_fifo" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="udp_checksum_fifo_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_0_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ila_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_5_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_5" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ila_5_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo4_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo4" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo4_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo_ttt_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo_ttt" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo_ttt_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo2_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo2" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo2_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo3_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo3" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo3_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo_ether_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo_ether" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo_ether_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ila_1_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="ila_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ila_1_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="gig_ethernet_pcs_pma_0_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="gig_ethernet_pcs_pma_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="gig_ethernet_pcs_pma_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="fifo_tcp_impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-i" ConstrsSet="fifo_tcp" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="fifo_tcp_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+  </Runs>
+  <Board/>
+</Project>

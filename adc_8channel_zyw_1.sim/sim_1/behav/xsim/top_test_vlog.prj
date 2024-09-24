@@ -1,0 +1,68 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../adc_8channel_zyw_1.srcs/sources_1/ip/sys_clk_mmcm" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm_clk_wiz.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/ila_7_3/sim/ila_7.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/ila_5/sim/ila_5.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/icmp_rx_ram_8_256/sim/icmp_rx_ram_8_256.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/udp_rx_ram_8_2048/sim/udp_rx_ram_8_2048.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/ila_6/sim/ila_6.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/udp_checksum_fifo/sim/udp_checksum_fifo.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/udp_tx_data_fifo/sim/udp_tx_data_fifo.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/len_fifo/sim/len_fifo.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/eth_data_fifo/sim/eth_data_fifo.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/ila_3/sim/ila_3.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/ila_4/sim/ila_4.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/sim/ila_1.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/fifo5/sim/fifo5.v" \
+"../../../../adc_8channel_zyw_1.ip_user_files/ip/fifo4/sim/fifo4.v" \
+"../../../../adc_8channel_zyw_1.ip_user_files/ip/fifo_ttt/sim/fifo_ttt.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/ila_2/sim/ila_2.v" \
+"../../../../adc_8channel_zyw_1.ip_user_files/ip/fifo3/sim/fifo3.v" \
+"../../../../adc_8channel_zyw_1.ip_user_files/ip/fifo2/sim/fifo2.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/adc_board.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/adc_spi.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/arp_cache.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/arp_rx.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/arp_tx.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/crc.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/data_package.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/data_processing.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/data_sample.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/new/ethernet.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/new/ethernet_test.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/new/gmii_arbi.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/gmii_rx_buffer.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/gmii_tx_buffer.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/icmp_reply.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/ip_rx.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/ip_tx.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/ip_tx_mode.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/lut_config.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_rx.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_rx_top.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_test.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_top.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_tx.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_tx_mode.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_tx_top.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/src/sd_card/sd_card_cmd.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/src/sd_card/sd_card_sec_read_write.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/src/sd_card_test.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/src/sd_card/sd_card_top.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/smi_config.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/smi_read_write.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/spi_config.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/spi_master.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/new/top_1.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/udp_rx.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/udp_tx.v" \
+"../../../../adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/util_gmii_to_rgmii.v" \
+"../../../../adc_8channel_zyw_1.srcs/sim_1/imports/new/top_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/vivadoprojects/adcether/adc_8channel_zyw_1/adc_8channel_zyw_1.hw/hw_1/wave/hw_ila_data_20/hw_ila_data_20.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="3616869fs"></ZoomEndTime>
+      <Cursor1Time time="2637000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="283"></NameColumnWidth>
+      <ValueColumnWidth column_width="114"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ram_rd_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ram_rd_en</obj_property>
+      <obj_property name="ObjectShortName">ram_rd_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ram_wr_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ram_wr_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ram_wr_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ram_wr_en</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/state[5:0]</obj_property>
+      <obj_property name="ObjectShortName">state[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,3 @@
+set_property SRC_FILE_INFO {cfile:e:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/ip_0/synth/gig_ethernet_pcs_pma_0_gt.xdc rfile:../../../adc_8channel_zyw_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/ip_0/synth/gig_ethernet_pcs_pma_0_gt.xdc id:1 order:EARLY scoped_inst:inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC GTHE3_CHANNEL_X0Y0 [get_cells -hierarchical -filter {NAME =~ *gen_channel_container[0].*gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST}]

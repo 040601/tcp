@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="fifo_tcp_synth_1" LaunchPart="xcku040-ffva1156-2-i" LaunchTime="1726998453">
+  <File Type="PA-TCL" Name="fifo_tcp.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="fifo_tcp_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="fifo_tcp_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fifo_tcp.vds"/>
+  <File Type="RDS-UTIL" Name="fifo_tcp_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fifo_tcp_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fifo_tcp.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="fifo_tcp_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="fifo_tcp_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_tcp">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_tcp/fifo_tcp.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_tcp"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_tcp">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_tcp/fifo_tcp.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_tcp"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xcku040-ffva1156-2-i" LaunchTime="1727002142">
+  <File Type="PWROPT-DCP" Name="top_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="BG-DRC" Name="top.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="top_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="top.hwdef"/>
+  <File Type="OPT-DCP" Name="top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="top_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="top_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="top_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="top.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="top.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="top.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="top.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="top.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="top.vdi"/>
+  <File Type="ROUTE-CLK" Name="top_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="top.nky"/>
+  <File Type="BITSTR-BMM" Name="top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="top.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="top.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.edf"/>
+        <Attr Name="ImportTime" Val="1726728792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.V">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.V"/>
+        <Attr Name="ImportTime" Val="1726728792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/TIMER.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/TIMER.v"/>
+        <Attr Name="ImportTime" Val="1726728792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/WRAP_SiTCP_GMII_XCKU_32K.V">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/WRAP_SiTCP_GMII_XCKU_32K.V"/>
+        <Attr Name="ImportTime" Val="1726728792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/adc_board.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/adc_board.v"/>
+        <Attr Name="ImportTime" Val="1721118158"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/adc_spi.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/adc_spi.v"/>
+        <Attr Name="ImportTime" Val="1720167490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/arp_cache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/arp_cache.v"/>
+        <Attr Name="ImportTime" Val="1723721567"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/arp_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/arp_rx.v"/>
+        <Attr Name="ImportTime" Val="1723721584"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/arp_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/arp_tx.v"/>
+        <Attr Name="ImportTime" Val="1723721541"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/crc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/crc.v"/>
+        <Attr Name="ImportTime" Val="1720160156"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/data_package.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/data_package.v"/>
+        <Attr Name="ImportTime" Val="1723970002"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/data_processing.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/data_processing.v"/>
+        <Attr Name="ImportTime" Val="1724764936"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_sample_inv.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/ethernet.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/new/ethernet.v"/>
+        <Attr Name="ImportTime" Val="1723901624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/ethernet_test.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/new/ethernet_test.v"/>
+        <Attr Name="ImportTime" Val="1723893082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/gmii_arbi.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/new/gmii_arbi.v"/>
+        <Attr Name="ImportTime" Val="1723710418"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/gmii_rx_buffer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/gmii_rx_buffer.v"/>
+        <Attr Name="ImportTime" Val="1720154846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/gmii_tx_buffer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/gmii_tx_buffer.v"/>
+        <Attr Name="ImportTime" Val="1720154802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/icmp_reply.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/icmp_reply.v"/>
+        <Attr Name="ImportTime" Val="1720159242"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/ip_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/ip_rx.v"/>
+        <Attr Name="ImportTime" Val="1720163430"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/ip_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/ip_tx.v"/>
+        <Attr Name="ImportTime" Val="1720160366"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/ip_tx_mode.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/ip_tx_mode.v"/>
+        <Attr Name="ImportTime" Val="1720160388"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/lut_config.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/lut_config.v"/>
+        <Attr Name="ImportTime" Val="1720142244"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_rx.v"/>
+        <Attr Name="ImportTime" Val="1720163378"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_rx_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_rx_top.v"/>
+        <Attr Name="ImportTime" Val="1720591262"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_test.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_test.v"/>
+        <Attr Name="ImportTime" Val="1724220466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_top.v"/>
+        <Attr Name="ImportTime" Val="1720159124"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_tx.v"/>
+        <Attr Name="ImportTime" Val="1723721636"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_tx_mode.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_tx_mode.v"/>
+        <Attr Name="ImportTime" Val="1723721607"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/mac_tx_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/mac_tx_top.v"/>
+        <Attr Name="ImportTime" Val="1720159156"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/sd_card/sd_card_cmd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/src/sd_card/sd_card_cmd.v"/>
+        <Attr Name="ImportTime" Val="1614160558"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/sd_card/sd_card_sec_read_write.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/src/sd_card/sd_card_sec_read_write.v"/>
+        <Attr Name="ImportTime" Val="1721911676"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/sd_card_test.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/src/sd_card_test.v"/>
+        <Attr Name="ImportTime" Val="1723969344"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/sd_card/sd_card_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/src/sd_card/sd_card_top.v"/>
+        <Attr Name="ImportTime" Val="1502714608"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sitcp_test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/smi_config.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/smi_config.v"/>
+        <Attr Name="ImportTime" Val="1720154414"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/smi_read_write.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/smi_read_write.v"/>
+        <Attr Name="ImportTime" Val="1720158920"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/spi_config.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/spi_config.v"/>
+        <Attr Name="ImportTime" Val="1720142300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/spi_master.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/spi_master.v"/>
+        <Attr Name="ImportTime" Val="1720142752"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/udp_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/udp_rx.v"/>
+        <Attr Name="ImportTime" Val="1720163454"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/udp_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/udp_tx.v"/>
+        <Attr Name="ImportTime" Val="1723883337"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/util_gmii_to_rgmii.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/util_gmii_to_rgmii.v"/>
+        <Attr Name="ImportTime" Val="1720154690"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/top_1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/new/top_1.v"/>
+        <Attr Name="ImportTime" Val="1724764737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/data_sample.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/imports/new/data_sample.v"/>
+        <Attr Name="ImportTime" Val="1723599832"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_fakeinput/fifo_fakeinput.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/adc_ethernet.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc"/>
+        <Attr Name="ImportTime" Val="1723722862"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/SiTCP_Netlist_for_Kintex_UltraScale-master/EDF_SiTCP_constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/EDF_SiTCP_constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1726728792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth_data_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo5"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="len_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="udp_tx_data_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="icmp_rx_ram_8_256"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="udp_rx_ram_8_2048"/>
+  <BlockFileSet Type="BlockSrcs" Name="sys_clk_mmcm"/>
+  <BlockFileSet Type="BlockSrcs" Name="udp_checksum_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo4"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_ttt"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo2"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo3"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="gig_ethernet_pcs_pma_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_tcp"/>
+</GenRun>

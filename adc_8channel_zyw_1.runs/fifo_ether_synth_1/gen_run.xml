@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="fifo_ether_synth_1" LaunchPart="xcku040-ffva1156-2-i" LaunchTime="1724915349">
+  <File Type="PA-TCL" Name="fifo_ether.tcl"/>
+  <File Type="REPORTS-TCL" Name="fifo_ether_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fifo_ether.vds"/>
+  <File Type="RDS-UTIL" Name="fifo_ether_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fifo_ether_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fifo_ether.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_ether">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_ether/fifo_ether.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_ether"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_ether">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_ether/fifo_ether.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_ether"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

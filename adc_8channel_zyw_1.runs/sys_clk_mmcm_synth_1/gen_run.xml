@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="sys_clk_mmcm_synth_1" LaunchPart="xcku040-ffva1156-2-i" LaunchTime="1726979570">
+  <File Type="PA-TCL" Name="sys_clk_mmcm.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="sys_clk_mmcm_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="sys_clk_mmcm_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sys_clk_mmcm.vds"/>
+  <File Type="RDS-UTIL" Name="sys_clk_mmcm_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="sys_clk_mmcm_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="sys_clk_mmcm.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="sys_clk_mmcm_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="sys_clk_mmcm_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sys_clk_mmcm">
+    <File Path="$PSRCDIR/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci"/>
+        <Attr Name="ImportTime" Val="1720078724"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="sys_clk_mmcm"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sys_clk_mmcm">
+    <File Path="$PSRCDIR/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../adc_8channel V2/adc_8channel_sd_eth_1600/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci"/>
+        <Attr Name="ImportTime" Val="1720078724"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="sys_clk_mmcm"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

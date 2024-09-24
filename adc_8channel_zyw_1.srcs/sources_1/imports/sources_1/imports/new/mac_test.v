@@ -1,0 +1,501 @@
+
+//`define TEST_SPEED
+`timescale 1 ns/1 ns
+module mac_test
+(
+ input                rst_n  , 
+ input [31:0]         pack_total_len,  
+ input                gmii_tx_clk ,
+ input                gmii_rx_clk ,
+ input                gmii_rx_dv,
+ input  [7:0]         gmii_rxd,
+ output reg           gmii_tx_en,
+ output reg [7:0]     gmii_txd ,
+  input [15:0]         length,
+ input                 active,
+ input    [3:0]        data,
+ output    reg        rd_en,
+ input                empty5
+);
+ reg [17:0] num;
+localparam UDP_WIDTH = 32 ;
+localparam UDP_DEPTH = 5 ;
+
+
+reg                  gmii_rx_dv_d0 ;
+reg   [7:0]          gmii_rxd_d0 ;
+wire                 gmii_tx_en_tmp ;
+wire   [7:0]         gmii_txd_tmp ;
+
+reg   [7:0]          ram_wr_data ;
+reg                  ram_wr_en ;
+wire                 udp_ram_data_req ;
+reg   [15:0]         udp_send_data_length ;
+
+wire  [7:0]          tx_ram_wr_data ;
+wire                 tx_ram_wr_en ;
+wire                 udp_tx_req ;
+wire                 arp_request_req ;
+wire                 mac_send_end ;
+reg                  write_end ;
+
+wire [7:0]           udp_rec_ram_rdata ;
+reg  [10:0]          udp_rec_ram_read_addr ;
+wire [15:0]          udp_rec_data_length ;
+wire                 udp_rec_data_valid ;
+
+wire                 udp_tx_end  ;
+wire                 almost_full ;
+
+reg                  udp_ram_wr_en ;
+reg                  udp_write_end ;
+wire                 write_ram_end ;
+reg  [31:0]          wait_cnt ;
+reg  [UDP_WIDTH-1:0]  udp_data [UDP_DEPTH-1:0];
+
+reg  [4:0] i;
+reg  [1:0] j ;
+
+reg  write_sel ;
+
+wire button_negedge ;
+
+wire mac_not_exist ;
+wire arp_found ;
+
+////my code
+//reg [3:0] buffer [31:0];
+//reg [4:0] cnt_wr;
+//reg [4:0] cnt_rd;
+//reg [3:0] tem_data;
+
+//always @(posedge gmii_tx_clk or negedge rst_n)
+//  begin
+//    if (~rst_n)
+//      begin
+//        cnt_wr <= 0;
+//        cnt_rd <= 1;
+//      end
+//    else
+//      begin
+//        cnt_wr <= cnt_wr+1;
+//        cnt_rd <= cnt_rd+1;
+//        buffer[cnt_wr]<= data;
+////        if(active)
+////           tem_data <= buffer[cnt_rd];
+//      end
+//  end
+//always @(posedge gmii_tx_clk or negedge rst_n)
+//    begin
+//     if (~rst_n)
+//         begin
+//           tem_data<= 0;
+//         end
+//     else
+//    if(active||num!=0)
+//      tem_data <= buffer[cnt_rd];
+//    else 
+//      tem_data <=0;
+//    end
+//end code
+parameter IDLE          = 9'b000_000_001 ;
+parameter ARP_REQ       = 9'b000_000_010 ;
+parameter ARP_SEND      = 9'b000_000_100 ;
+parameter ARP_WAIT      = 9'b000_001_000 ;
+parameter GEN_REQ       = 9'b000_010_000 ;
+parameter WRITE_RAM     = 9'b000_100_000 ;
+parameter SEND          = 9'b001_000_000 ;
+parameter WAIT          = 9'b010_000_000 ;
+parameter CHECK_ARP     = 9'b100_000_000 ;
+
+
+reg [8:0]    state  ;
+reg [8:0]    next_state ;
+reg [15:0]  ram_cnt ;
+reg    almost_full_d0 ;
+reg    almost_full_d1 ;
+always @(posedge gmii_tx_clk or negedge rst_n)
+  begin
+    if (~rst_n)
+      state  <=  IDLE  ;
+    else
+      state  <= next_state ;
+  end
+  
+always @(*)
+  begin
+    case(state)
+      IDLE        :
+        begin
+       // if (active) 
+          if(length != 0)   
+            next_state <= ARP_REQ ;
+          else
+            next_state <= IDLE ;
+        end
+
+      ARP_REQ     :
+        next_state <= ARP_SEND ;
+      ARP_SEND    :
+        begin
+          if (mac_send_end)
+            next_state <= ARP_WAIT ;
+          else
+            next_state <= ARP_SEND ;
+        end
+      ARP_WAIT    :
+        begin
+          if (arp_found)
+            next_state <= WAIT ;
+         // else if (active)
+         //else if(length!=0)
+         else if (wait_cnt == 10000)
+            next_state <= ARP_REQ ;
+          else
+            next_state <= ARP_WAIT ;
+        end
+      GEN_REQ     :
+        begin
+          if (udp_ram_data_req)
+            next_state <= WRITE_RAM ;
+          else
+            next_state <= GEN_REQ ;
+        end
+      WRITE_RAM   :
+        begin
+          if (write_ram_end)
+          //if(num==100)
+            next_state <= WAIT     ;
+          else
+            next_state <= WRITE_RAM ;
+        end
+        
+      SEND        :
+        begin
+          if (udp_tx_end)
+            next_state <= WAIT ;
+          else
+            next_state <= SEND ;
+        end
+        
+      WAIT        :
+        begin
+           if (wait_cnt >= 10000 && length != 0 && empty5 == 0)
+          //if(active)
+          // if(length!=0)
+            next_state <= CHECK_ARP ;
+          else
+            next_state <= WAIT ;
+        end
+      CHECK_ARP   :
+        begin
+          if (mac_not_exist)
+            next_state <= ARP_REQ ;
+          else if (almost_full_d1)
+            next_state <= CHECK_ARP ;
+          else
+            next_state <= GEN_REQ ;
+        end
+      default     :
+        next_state <= IDLE ;
+    endcase
+  end
+  
+  
+assign write_ram_end        = (write_sel)? udp_write_end : write_end ;
+assign tx_ram_wr_data       = (write_sel)? udp_rec_ram_rdata : ram_wr_data ;
+assign tx_ram_wr_en         = (write_sel)? udp_ram_wr_en : ram_wr_en ;
+
+
+always@(posedge gmii_rx_clk or negedge rst_n)
+  begin
+    if(rst_n == 1'b0)
+      begin
+        gmii_rx_dv_d0 <= 1'b0 ;
+        gmii_rxd_d0   <= 8'd0 ;
+      end
+    else
+      begin
+        gmii_rx_dv_d0 <= gmii_rx_dv ;
+        gmii_rxd_d0   <= gmii_rxd ;
+      end
+  end
+  
+always@(posedge gmii_tx_clk or negedge rst_n)
+  begin
+    if(rst_n == 1'b0)
+      begin
+        gmii_tx_en <= 1'b0 ;
+        gmii_txd   <= 8'd0 ;
+      end
+    else
+      begin
+        gmii_tx_en <= gmii_tx_en_tmp ;
+        gmii_txd   <= gmii_txd_tmp ;
+      end
+  end
+
+
+
+  
+mac_top mac_top0
+(
+ .gmii_tx_clk                 (gmii_tx_clk)                  ,
+ .gmii_rx_clk                 (gmii_rx_clk)                  ,
+ .rst_n                       (rst_n)  ,
+ 
+ .source_mac_addr             (48'h00_0a_35_01_fe_c0)   ,       //source mac address
+ .TTL                         (8'h80),
+ .source_ip_addr              (32'hc0a80002),
+ .destination_ip_addr         (32'hc0a80003),
+ .udp_send_source_port        (16'h1f90),
+ .udp_send_destination_port   (16'h1f90),
+ 
+ .ram_wr_data                 (tx_ram_wr_data) ,
+ .ram_wr_en                   (tx_ram_wr_en),
+ .udp_ram_data_req            (udp_ram_data_req),
+ .udp_send_data_length        (udp_send_data_length),
+ .udp_tx_end                  (udp_tx_end),
+ .almost_full                 (almost_full), 
+ 
+ .udp_tx_req                  (udp_tx_req),
+ .arp_request_req             (arp_request_req ),
+ 
+ .mac_send_end                (mac_send_end),
+ .mac_data_valid              (gmii_tx_en_tmp),
+ .mac_tx_data                 (gmii_txd_tmp),
+ .rx_dv                       (gmii_rx_dv_d0   ),
+ .mac_rx_datain               (gmii_rxd_d0 ),
+ 
+ .udp_rec_ram_rdata           (udp_rec_ram_rdata),
+ .udp_rec_ram_read_addr       (udp_rec_ram_read_addr),
+ .udp_rec_data_length         (udp_rec_data_length ),
+ 
+ .udp_rec_data_valid          (udp_rec_data_valid),
+ .arp_found                   (arp_found ),
+ .mac_not_exist               (mac_not_exist )
+) ;
+              
+//always @(*)
+//  begin
+//    udp_data[0] <={"H","E","L","L"};
+//    udp_data[1] <={"O"," ","A","L"};
+//    udp_data[2] <={"I","N","X"," "};
+//    udp_data[3] <={"H","E","I","J"};
+//    udp_data[4] <={"I","N","\r","\n"};
+    
+//  end
+
+always@(posedge gmii_rx_clk or negedge rst_n)
+  begin
+    if(rst_n == 1'b0)
+      begin
+        almost_full_d0   <= 1'b0 ;
+        almost_full_d1   <= 1'b0 ;
+      end
+    else
+      begin
+        almost_full_d0   <= almost_full ;
+        almost_full_d1   <= almost_full_d0 ;
+      end
+  end
+
+//always@(posedge gmii_rx_clk or negedge rst_n)
+//  begin
+//    if(rst_n == 1'b0)
+//	   udp_send_data_length <= 16'd0 ;
+//    else if (write_sel)	 
+//		udp_send_data_length <= udp_rec_data_length - 8  ;
+//	 else
+//       udp_send_data_length <= 100 ;//length to transmit
+//  end
+
+ always@(posedge gmii_rx_clk or negedge rst_n)
+  begin
+    if(rst_n == 1'b0)
+	   udp_send_data_length <= 16'd0 ;
+	 else
+       udp_send_data_length <= 150 ;//length to transmit
+  end
+
+ 
+ 
+always@(posedge gmii_tx_clk or negedge rst_n)
+  begin
+    if(rst_n == 1'b0)
+      write_sel <= 1'b0 ;
+    else if (state == WAIT)
+      begin
+        if (udp_rec_data_valid)
+          write_sel <= 1'b1 ;
+        else
+          write_sel <= 1'b0 ;
+      end
+  end
+  
+assign udp_tx_req    = (state == GEN_REQ) ;
+assign arp_request_req  = (state == ARP_REQ) ;
+
+always@(posedge gmii_tx_clk or negedge rst_n)
+  begin
+//    if(rst_n == 1'b0||active == 0)
+     if(rst_n == 1'b0||length == 0)
+      wait_cnt <= 0 ;
+    else if ((state==IDLE||state == WAIT || state == ARP_WAIT) && state != next_state)
+      wait_cnt <= 0 ;
+    else if (state==IDLE||state == WAIT || state == ARP_WAIT)
+      wait_cnt <= wait_cnt + 1'b1 ;
+	 else
+	   wait_cnt <= 0 ;
+  end
+  //my code
+
+  
+//end code  
+localparam IDLE2 = 0;
+localparam COUNTER = 1;
+localparam END2 = 2 ;
+localparam TRANSITION = 3;
+
+  reg [1:0] num_state; 
+  reg [1:0] num_next_state;
+   always@(posedge gmii_tx_clk or negedge rst_n)
+    begin
+      if(rst_n == 1'b0)
+         num_state =IDLE;
+      else 
+        num_state = num_next_state;
+    end  
+     always@(*)
+      begin
+       case (num_state)
+       IDLE2:
+       begin
+          if(state ==  WRITE_RAM)
+            num_next_state <= COUNTER;
+          else
+           num_next_state <= IDLE2;
+       end
+       COUNTER:
+       begin
+         if(num == 146)
+           num_next_state <= END2;
+         else
+           num_next_state <= COUNTER;
+       end
+       END2:
+       begin
+          num_next_state <= TRANSITION;
+       end
+       TRANSITION:
+       begin
+         num_next_state <= IDLE2; 
+       end
+       endcase
+      end
+  
+  always@(posedge gmii_tx_clk or negedge rst_n)
+          begin
+            if(rst_n == 1'b0)
+              begin
+                write_end  <= 1'b0;
+                ram_wr_data <= 0;
+                ram_wr_en  <= 0 ;
+                rd_en <=0;
+              end
+            else if (state == WRITE_RAM)
+              begin
+       //         if(~active)//write over
+                if(num_state == END2)//depend on the transmit side
+                  begin
+                   // ram_wr_en <=1'b0;
+                   write_end <= 1'b1;
+                   rd_en <=0; //try read enable 0 here
+                   ram_wr_en <= 1'b1 ;
+                   //  write_end <= 1'b0 ;
+                   ram_wr_data <= {data,4'b0000};
+                   // rd_en <=1;
+                  end
+                else if(num_state == TRANSITION) //to solve a weird rd_en pulse
+                    begin
+                    write_end <= 1'b0;
+                     rd_en <=0; //try read enable 0 here
+                     ram_wr_en <= 1'b1 ;
+                    ram_wr_data <= {data,4'b0000};
+                    end
+                else//going on writing
+                  begin
+                    ram_wr_en <= 1'b1 ;
+                    write_end <= 1'b0 ;
+                    ram_wr_data <= {data,4'b0000};
+                    rd_en <=1;
+                  end
+              end
+            else
+              begin
+                write_end  <= 1'b0;
+                ram_wr_data <= 0;
+                ram_wr_en  <= 0 ;
+                rd_en <=0;
+              end
+          end
+      
+         always@(posedge gmii_tx_clk or negedge rst_n)
+           begin
+             if(rst_n == 1'b0)
+               begin
+                 num<= 0;
+               end 
+             else if(num_state == COUNTER)
+                num<= num+1;
+             else num <= 0;
+           end
+
+  
+//send udp received data to udp tx ram
+always@(posedge gmii_tx_clk or negedge rst_n)
+  begin
+    if(rst_n == 1'b0)
+      udp_rec_ram_read_addr <= 11'd0 ;
+    else if (state == WRITE_RAM)
+      udp_rec_ram_read_addr <= udp_rec_ram_read_addr + 1'b1 ;
+    else
+      udp_rec_ram_read_addr <= 11'd0 ;
+  end
+  
+always@(posedge gmii_tx_clk or negedge rst_n)
+  begin
+    if(rst_n == 1'b0)
+      udp_ram_wr_en <= 1'b0 ;
+    else if (state == WRITE_RAM && udp_rec_ram_read_addr < udp_rec_data_length - 8)
+      udp_ram_wr_en <= 1'b1 ;
+    else
+      udp_ram_wr_en <= 1'b0 ;
+  end
+  
+always@(posedge gmii_tx_clk or negedge rst_n)
+  begin
+    if(rst_n == 1'b0)
+      udp_write_end <= 1'b0 ;
+    else if (state == WRITE_RAM && udp_rec_ram_read_addr == udp_rec_data_length - 8)
+      udp_write_end <= 1'b1 ;
+    else
+      udp_write_end <= 1'b0 ;
+  end
+ ila_5 urtss(
+    .clk(gmii_tx_clk),
+    .probe0(length),
+    .probe1(data),
+    .probe2(rd_en),
+    .probe3(active),
+    .probe4(state),
+    .probe5(wait_cnt),
+    .probe6(almost_full),
+    .probe7(empty5),
+    .probe8(ram_wr_data),
+    .probe9(udp_ram_wr_en),
+    .probe10(gmii_tx_en),
+    .probe11(gmii_txd)
+ );
+ 
+endmodule

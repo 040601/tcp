@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Sep 22 17:47:36 2024
+# Process ID: 58544
+# Current directory: E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.runs/fifo_tcp_synth_1
+# Command line: vivado.exe -log fifo_tcp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_tcp.tcl
+# Log file: E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.runs/fifo_tcp_synth_1/fifo_tcp.vds
+# Journal file: E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.runs/fifo_tcp_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_tcp.tcl -notrace

@@ -1,0 +1,122 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sys_clk_mmcm_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sys_clk_mmcm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/ila_7_3/sim/ila_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/ila_5/sim/ila_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/icmp_rx_ram_8_256/sim/icmp_rx_ram_8_256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module icmp_rx_ram_8_256
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/udp_rx_ram_8_2048/sim/udp_rx_ram_8_2048.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_rx_ram_8_2048
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/ila_6/sim/ila_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/udp_checksum_fifo/sim/udp_checksum_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_checksum_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/udp_tx_data_fifo/sim/udp_tx_data_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_tx_data_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/len_fifo/sim/len_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module len_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/eth_data_fifo/sim/eth_data_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_data_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/ila_3/sim/ila_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/ila_4/sim/ila_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/sim/ila_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/fifo5/sim/fifo5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.ip_user_files/ip/fifo4/sim/fifo4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.ip_user_files/ip/fifo_ttt/sim/fifo_ttt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_ttt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/ila_2/sim/ila_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.ip_user_files/ip/fifo3/sim/fifo3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.ip_user_files/ip/fifo2/sim/fifo2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/adc_board.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adc_board
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/adc_spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adc_spi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/arp_cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arp_cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/arp_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arp_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/arp_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arp_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/crc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/data_package.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_package
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/data_processing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_processing
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/data_sample.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_sample
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/new/ethernet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ethernet
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/new/ethernet_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ethernet_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/new/gmii_arbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gmii_arbi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/gmii_rx_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gmii_rx_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/gmii_tx_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gmii_tx_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/icmp_reply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module icmp_reply
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/ip_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/ip_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/ip_tx_mode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_tx_mode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/lut_config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lut_config
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_tx_mode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_tx_mode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/mac_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/src/sd_card/sd_card_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sd_card_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/src/sd_card/sd_card_sec_read_write.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sd_card_sec_read_write
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/src/sd_card_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sd_card_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/src/sd_card/sd_card_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sd_card_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/smi_config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smi_config
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/smi_read_write.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smi_read_write
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/spi_config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_config
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/spi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/new/top_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/udp_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/udp_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sources_1/imports/sources_1/imports/new/util_gmii_to_rgmii.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module util_gmii_to_rgmii
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.srcs/sim_1/imports/new/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/CW4.team/adc_8channel_zyw/adc_8channel_zyw_1/adc_8channel_zyw_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

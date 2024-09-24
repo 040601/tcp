@@ -1,0 +1,873 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Sep 12 13:30:16 2024
+# Process ID: 22044
+# Current directory: E:/vivadoprojects/adcether/adc_8channel_zyw_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2512 E:\vivadoprojects\adcether\adc_8channel_zyw_2\adc_8channel_zyw_1.xpr
+# Log file: E:/vivadoprojects/adcether/adc_8channel_zyw_2/vivado.log
+# Journal file: E:/vivadoprojects/adcether/adc_8channel_zyw_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.xpr
+INFO: [Project 1-313] Project file moved from 'E:/vivadoprojects/adcether/adc_8channel_zyw_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1137.906 ; gain = 401.266
+update_compile_order -fileset sources_1
+file mkdir E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/new
+close [ open E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/new/data_sample_inv.v w ]
+add_files E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/new/data_sample_inv.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Sep 12 13:44:21 2024] Launched synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/synth_1/runme.log
+[Thu Sep 12 13:44:21 2024] Launched impl_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+refresh_hw_device: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1953.008 ; gain = 161.438
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_15 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_16 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_17 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_18 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_19 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_20 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_21 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_22 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_23 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1970.246 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1977.094 ; gain = 6.848
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xcku040_0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xcku040_0] 0] [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1980.309 ; gain = 3.215
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.FILES [list "E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xcku040_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xcku040_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xcku040_0] 0]]; program_hw_devices [lindex [get_hw_devices xcku040_0] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:04:19 . Memory (MB): peak = 1991.637 ; gain = 6.062
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Sep 12 15:27:45 2024] Launched synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/synth_1/runme.log
+[Thu Sep 12 15:27:45 2024] Launched impl_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {41}] [get_ips ila_1]
+generate_target all [get_files  E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_1'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_1'...
+catch { config_ip_cache -export [get_ips -all ila_1] }
+export_ip_user_files -of_objects [get_files E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1.xci] -no_script -sync -force -quiet
+reset_run ila_1_synth_1
+launch_runs -jobs 12 ila_1_synth_1
+[Thu Sep 12 15:35:50 2024] Launched ila_1_synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/ila_1_synth_1/runme.log
+export_simulation -of_objects [get_files E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1.xci] -directory E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.ip_user_files/sim_scripts -ip_user_files_dir E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.ip_user_files -ipstatic_source_dir E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/modelsim} {questa=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/questa} {riviera=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/riviera} {activehdl=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Sep 12 15:41:14 2024] Launched synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/synth_1/runme.log
+[Thu Sep 12 15:41:14 2024] Launched impl_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {42}] [get_ips ila_1]
+generate_target all [get_files  E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_1'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_1'...
+catch { config_ip_cache -export [get_ips -all ila_1] }
+export_ip_user_files -of_objects [get_files E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1.xci] -no_script -sync -force -quiet
+reset_run ila_1_synth_1
+launch_runs -jobs 12 ila_1_synth_1
+[Thu Sep 12 15:54:03 2024] Launched ila_1_synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/ila_1_synth_1/runme.log
+export_simulation -of_objects [get_files E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1.xci] -directory E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.ip_user_files/sim_scripts -ip_user_files_dir E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.ip_user_files -ipstatic_source_dir E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/modelsim} {questa=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/questa} {riviera=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/riviera} {activehdl=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Sep 12 15:57:54 2024] Launched synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/synth_1/runme.log
+[Thu Sep 12 15:57:54 2024] Launched impl_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2146.082 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+refresh_hw_device: Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2270.406 ; gain = 124.324
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_15 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_16 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_17 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_18 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_19 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_20 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_21 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_22 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_23 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-12 16:17:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-12 16:17:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 16:17:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Sep-12 16:18:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 16:18:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Sep-12 16:18:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_17.wcfg} -radix hex { {data/wr_en_ttt} {data/valid} {data/triggered_1} {data/startt23} {data/pre_start2} {data/fifo2_clear} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 16:19:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Sep-12 16:19:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 16:20:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Sep-12 16:20:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 16:20:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Sep-12 16:20:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-12 16:20:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-12 16:20:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2024-Sep-12 16:20:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2024-Sep-12 16:20:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2024-Sep-12 16:21:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2024-Sep-12 16:21:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2024-Sep-12 16:22:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2024-Sep-12 16:22:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2024-Sep-12 16:23:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2024-Sep-12 16:23:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2024-Sep-12 16:23:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2024-Sep-12 16:23:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2024-Sep-12 16:23:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2024-Sep-12 16:23:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 16:23:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Sep-12 16:23:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 16:23:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Sep-12 16:23:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xcku040 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Sep 12 19:02:51 2024] Launched synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/synth_1/runme.log
+[Thu Sep 12 19:02:51 2024] Launched impl_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 6244 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp75/top_board.xdc]
+Finished Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp75/top_board.xdc]
+Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp75/top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 3820.395 ; gain = 457.305
+Finished Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp75/top_early.xdc]
+Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp75/top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'adc1_clk_p' already exists, overwriting the previous clock with the same name. [E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/constrs_1/imports/new/adc_ethernet.xdc:239]
+WARNING: [Constraints 18-619] A clock with name 'adc2_clk_p' already exists, overwriting the previous clock with the same name. [E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/constrs_1/imports/new/adc_ethernet.xdc:240]
+Finished Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp75/top.xdc]
+Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp75/top_late.xdc]
+Finished Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp75/top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3940.234 ; gain = 34.422
+Restored from archive | CPU: 5.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3940.234 ; gain = 34.422
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2625 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 2552 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 14 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 53 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+open_run: Time (s): cpu = 00:00:54 ; elapsed = 00:01:21 . Memory (MB): peak = 4186.625 ; gain = 1896.918
+open_report: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 5140.480 ; gain = 953.855
+close_design
+set_property PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 5900.723 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 5900.723 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_15 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_16 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_17 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_18 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_19 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_20 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_21 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_22 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_23 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE42_WIDTH {12} CONFIG.C_NUM_OF_PROBES {44}] [get_ips ila_1]
+generate_target all [get_files  E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_1'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_1'...
+catch { config_ip_cache -export [get_ips -all ila_1] }
+export_ip_user_files -of_objects [get_files E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1.xci] -no_script -sync -force -quiet
+reset_run ila_1_synth_1
+launch_runs -jobs 12 ila_1_synth_1
+[Thu Sep 12 20:08:28 2024] Launched ila_1_synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/ila_1_synth_1/runme.log
+export_simulation -of_objects [get_files E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/ila_1/ila_1.xci] -directory E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.ip_user_files/sim_scripts -ip_user_files_dir E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.ip_user_files -ipstatic_source_dir E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/modelsim} {questa=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/questa} {riviera=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/riviera} {activehdl=E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Sep 12 20:09:35 2024] Launched ila_1_synth_1, synth_1...
+Run output will be captured here:
+ila_1_synth_1: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/ila_1_synth_1/runme.log
+synth_1: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/synth_1/runme.log
+[Thu Sep 12 20:09:35 2024] Launched impl_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/runme.log
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 20:10:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Sep-12 20:10:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 5900.723 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 5900.723 ; gain = 0.000
+add_wave -into {hw_ila_data_17.wcfg} -radix hex { {data/trigger_en} {data/cnt_trigger} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 20:34:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Sep-12 20:34:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xcku040 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 5900.723 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 5900.723 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_15 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_16 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_17 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_18 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_19 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_20 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_21 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_22 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_23 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Sep-12 20:45:43
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_17' trigger was stopped by user at 2024-Sep-12 20:47:24
+WARNING: [Labtools 27-157] hw_ila [hw_ila_17] stopped. No data to upload.
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xcku040_0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xcku040_0] 0] [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 5900.723 ; gain = 0.000
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.FILES [list "E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xcku040_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xcku040_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xcku040_0] 0]]; program_hw_devices [lindex [get_hw_devices xcku040_0] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:04:23 . Memory (MB): peak = 5900.723 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Sep 12 22:22:42 2024] Launched synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/synth_1/runme.log
+[Thu Sep 12 22:22:42 2024] Launched impl_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 6303 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 5900.723 ; gain = 0.000
+INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xcku040 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xcku040_0 ]]
+set_property PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 5900.723 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 5900.723 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_15 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_16 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_17 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_18 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_19 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_20 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_21 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2_2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_22 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_23 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xcku040_0] 0] [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 23 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_22.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.hw/backup/hw_ila_data_23.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 5900.723 ; gain = 0.000
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.FILES [list "E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xcku040_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xcku040_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xcku040_0] 0]]; program_hw_devices [lindex [get_hw_devices xcku040_0] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku040_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:04:23 . Memory (MB): peak = 5900.723 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Sep 13 00:01:08 2024] Launched synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/synth_1/runme.log
+[Fri Sep 13 00:01:08 2024] Launched impl_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 6303 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp121/top_board.xdc]
+Finished Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp121/top_board.xdc]
+Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp121/top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5900.723 ; gain = 0.000
+Finished Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp121/top_early.xdc]
+Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp121/top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'adc1_clk_p' already exists, overwriting the previous clock with the same name. [E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/constrs_1/imports/new/adc_ethernet.xdc:239]
+WARNING: [Constraints 18-619] A clock with name 'adc2_clk_p' already exists, overwriting the previous clock with the same name. [E:/vivadoprojects/adcether/adc_8channel_zyw_2/adc_8channel_zyw_1.srcs/constrs_1/imports/new/adc_ethernet.xdc:240]
+Finished Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp121/top.xdc]
+Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp121/top_late.xdc]
+Finished Parsing XDC File [E:/vivadoprojects/adcether/adc_8channel_zyw_2/.Xil/Vivado-22044-LAPTOP-ENQIT77Q/dcp121/top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 5900.723 ; gain = 0.000
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 5900.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2637 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 2564 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 14 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 53 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+open_run: Time (s): cpu = 00:00:40 ; elapsed = 00:01:05 . Memory (MB): peak = 5900.723 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 5900.723 ; gain = 0.000
+close_design
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-JTAG-HS1-210512180081" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-JTAG-HS1-210512180081" may be locked by another hw_server.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-JTAG-HS1-210512180081" may be locked by another hw_server.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 13 00:22:46 2024...

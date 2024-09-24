@@ -1,0 +1,2 @@
+fifo_tcp.v,verilog,xil_defaultlib,../../../../adc_8channel_zyw_1.srcs/sources_1/ip/fifo_tcp/sim/fifo_tcp.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

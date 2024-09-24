@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Sep 19 14:50:54 2024
+# Process ID: 38676
+# Current directory: E:/vivadoprojects/adcether/adc_8channel_zyw_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2648 E:\vivadoprojects\adcether\adc_8channel_zyw_3\adc_8channel_zyw_1.xpr
+# Log file: E:/vivadoprojects/adcether/adc_8channel_zyw_3/vivado.log
+# Journal file: E:/vivadoprojects/adcether/adc_8channel_zyw_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.xpr
+INFO: [Project 1-313] Project file moved from 'E:/vivadoprojects/adcether/adc_8channel_zyw_2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1008.418 ; gain = 313.355
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip/ila_7_3/ila_7.xci] -no_script -reset -force -quiet
+remove_files  -fileset ila_7 E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip/ila_7_3/ila_7.xci
+INFO: [Project 1-386] Moving file 'E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip/ila_7_3/ila_7.xci' from fileset 'ila_7' to fileset 'sources_1'.
+remove_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1165.988 ; gain = 113.609
+import_files -norecurse E:/vivadoprojects/adcether/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.edf
+import_files -norecurse {E:/vivadoprojects/adcether/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/TIMER.v E:/vivadoprojects/adcether/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/WRAP_SiTCP_GMII_XCKU_32K.V E:/vivadoprojects/adcether/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.V}
+update_compile_order -fileset sources_1
+close [ open E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/new/sitcp_test.v w ]
+add_files E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/new/sitcp_test.v
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku040-ffva1156-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku040-ffva1156-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku040-ffva1156-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku040-ffva1156-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+create_ip -name gig_ethernet_pcs_pma -vendor xilinx.com -library ip -version 16.1 -module_name gig_ethernet_pcs_pma_0 -dir e:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku040-ffva1156-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+set_property -dict [list CONFIG.Standard {1000BASEX}] [get_ips gig_ethernet_pcs_pma_0]
+Sourcing the elaborate.xit file.
+Calling update_contents for BASEX .
+Done sourcing the elaborate.xit file.
+generate_target {instantiation_template} [get_files e:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gig_ethernet_pcs_pma_0'...
+generate_target all [get_files  e:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gig_ethernet_pcs_pma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'gig_ethernet_pcs_pma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'gig_ethernet_pcs_pma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'gig_ethernet_pcs_pma_0'...
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1695.293 ; gain = 5.539
+catch { config_ip_cache -export [get_ips -all gig_ethernet_pcs_pma_0] }
+export_ip_user_files -of_objects [get_files e:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci]
+launch_runs -jobs 12 gig_ethernet_pcs_pma_0_synth_1
+[Thu Sep 19 15:14:11 2024] Launched gig_ethernet_pcs_pma_0_synth_1...
+Run output will be captured here: E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.runs/gig_ethernet_pcs_pma_0_synth_1/runme.log
+export_simulation -of_objects [get_files e:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci] -directory E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.ip_user_files/sim_scripts -ip_user_files_dir E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.ip_user_files -ipstatic_source_dir E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.cache/compile_simlib/modelsim} {questa=E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.cache/compile_simlib/questa} {riviera=E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.cache/compile_simlib/riviera} {activehdl=E:/vivadoprojects/adcether/adc_8channel_zyw_3/adc_8channel_zyw_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 20 11:17:13 2024...
